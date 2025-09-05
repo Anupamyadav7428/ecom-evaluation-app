@@ -73,6 +73,19 @@ npm run dev
 
 <p>14. Open <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> and see it live!</p>
 
+<p>15. Create an admin user using this curl:</p>
+
+```
+curl --location 'http://localhost:3001/api/users' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "admin@academymint.com",
+    "password": "admin_am",
+    "role": "admin"
+}'
+```
+<p>16. Visit 'http://localhost:3000/admin' for admin UI after loging in with credentials </p>
+
 
 <h2>Project screenshots</h2>
 
