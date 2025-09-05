@@ -11,8 +11,6 @@ Singitronic is a modern online shop that specializes in selling all types of ele
 
 <h2>Step-by-step video instructions for running the app</h2>
 
-[https://www.youtube.com/watch?v=Ry0aOMws0gE](https://www.youtube.com/watch?v=Ry0aOMws0gE)
-
 <h2>Instructions</h2>
 <ol>
   <li><p> To run the appplication Node JS, npm and an mysql instance </p> </li>
