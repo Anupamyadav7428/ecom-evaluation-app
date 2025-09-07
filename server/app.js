@@ -11,7 +11,12 @@ const orderRouter = require("./routes/customer_orders");
 const slugRouter = require("./routes/slugs");
 const orderProductRouter = require('./routes/customer_order_product');
 const wishlistRouter = require('./routes/wishlist');
+const dashboardRoutes =require('./routes/dashboard.js'); 
+const dotenv = require('dotenv');
+dotenv.config();
+
 var cors = require("cors");
+
 
 const app = express();
 
@@ -36,6 +41,8 @@ app.use('/api/order-product', orderProductRouter);
 app.use("/api/slugs", slugRouter);
 app.use("/api/wishlist", wishlistRouter);
 
+//dashboard
+app.use("/dashboard", dashboardRoutes);
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
